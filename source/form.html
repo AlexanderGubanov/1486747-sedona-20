@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="#" width="#" height="#" alt="Логотип Седоны">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="visually-hidden main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a><!--Закрывающая кнопка-->
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__header">Оставьте свой отзыв</h1>
+      <p class="page-main__text">Помогите нашим отелям стать лучше!<br>
+      Оставьте отзыв о них, а также о <br>
+      посещенных вами <br>
+      достопримечательностях</p>
+
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-feedback__name">Представьтесь:<br>
+          Имя*: <input type="text" placeholder="Петр"> <br>
+          Фамилия*: <input type="text" placeholder="Иванов"> <br>
+          Отчество: <input type="text" placeholder="Александрович"><br>
+        </fieldset>
+
+        <fieldset class="form-feedback__contacts">Контактная информация: <br>
+          Контактный телефон*: <br>
+          <input type="tel" placeholder="Введите телефон"> <!--Иконка трубки--><br>
+          Электронная почта*: <br>
+          <input type="email" placeholder="Введите e-mail"> <!--Иконка конверта--><br>
+        </fieldset>
+
+        <fieldset class="form-feedback__impressions">Ваше общее впечатление: <br>
+        <input type="radio" name="impression" value="positive" checked> Скорее положительное<br>
+        <input type="radio" name="impression" value="negative"> Скорее отрицательное<br>
+        <input type="radio" name="impression" value="indefinite"> Затрудняюсь ответить
+        </fieldset>
+
+        <fieldset class="form-feedback__showplaces">Посещенные <br>
+          достопримечательности: <br>
+          <input type="checkbox" checked> Мост дьявола <br>
+          <input type="checkbox" checked> Гора-Колокол <br>
+          <input type="checkbox" checked> Слайд-парк<br>
+          <input type="checkbox"> Красные скалы<br>
+        </fieldset>
+
+        <fieldset class="form-feedback__emotions">Опишите свои эмоции: <br>
+          <textarea rows="6">Опишите подробно все свои восторги</textarea>
+        </fieldset><br>
+
+        <input class="form-feedback__submit" type="submit" value="Отправить отзыв">
+      </form>
+    </main>
+
+
+    <footer class="page-footer">
+      <ul class="social-media">
+        <span class="social-media__hashtag">#visitsedona</span>
+        <li class="social-media__item">
+          <a href="blank.html"><!--Иконка твиттера--></a>
+        </li>
+        <li class="social-media__item">
+          <a href="blank.html"><!--Иконка фб--></a>
+        </li>
+        <li class="social-media__item">
+          <a href="blank.html"><!--Иконка ютуба--></a>
+        </li>
+      </ul>
+
+     <p class="page-footer__developed">Разработано</p>
+     <a href="https://htmlacademy.ru/intensive/adaptive"><!--Иконка- HTML Academy--></a>
+    </footer>
+
+  </body>
+</html>

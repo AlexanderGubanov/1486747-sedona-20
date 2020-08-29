@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="#" width="#" height="#" alt="Логотип Седоны">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="visually-hidden main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a><!--Закрывающая кнопка-->
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <img class="page-main__photo" src="#" width="" height="" alt="Вид на горы">
+      <svg></svg>
+      <section class="advantages">
+        <h1 class="advantages__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+
+        <uL class="advantages-list">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          <li class="advantages-list__item">
+            <h2>Настоящий городок</h2>
+            №1<br>
+            Седона не аттракцион для туристов, там течет своя жизнь<br>
+            <img src="#" width="" height="" alt="Фото города">
+            <ul class="">
+              <li>
+                <h3>Жилье</h3>
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </li>
+              <li>
+                <h3>Еда</h3>
+                Всегда заказывайте фирменный бургер, вы не разочаруеетсь!
+              </li>
+              <li>
+                <h3>Сувениры</h3>
+                Не только китайского, но и местного производства!
+              </li>
+            </ul>
+          </li>
+          <li class="advantages-list__item">
+            <h2>Там есть мост дьявола</h2>
+            №2<br>
+            Да, по нему можно пройти! Если вы осмелитесь, конечно
+          </li>
+          <li class="advantages-list__item">
+            <h2>Небольшая площадь</h2>
+            №3<br>
+            Все интересные места находятся очень близко
+          </li>
+          <li class="advantages-list__item">
+            <h2>Красивая дорога</h2>
+            №4<br>
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </li>
+          <li class="advantages-list__item">
+            <h2>Мало туристов</h2>
+            №5<br>
+            Большинство едет в Гранд Каньон и толпится там
+          </li>
+        </uL>
+      </section>
+
+      <section class="tour">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="tour__header">Заинтересовались?</p>
+        <p class="tour__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <a class="tour__hotel-searh" href="blank.html">Найти гостинницу</a>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <ul class="social-media">
+        <span class="social-media__hashtag">#visitsedona</span>
+        <li class="social-media__item">
+          <a href="blank.html"><!--Иконка твиттера--></a>
+        </li>
+        <li class="social-media__item">
+          <a href="blank.html"><!--Иконка фб--></a>
+        </li>
+        <li class="social-media__item">
+          <a href="blank.html"><!--Иконка ютуба--></a>
+        </li>
+      </ul>
+
+     <p class="page-footer__developed">Разработано</p>
+     <a href="https://htmlacademy.ru/intensive/adaptive"><!--Иконка- HTML Academy--></a>
+    </footer>
 
   </body>
 </html>
