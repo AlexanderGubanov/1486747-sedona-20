@@ -8,69 +8,72 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="#" width="#" height="#" alt="Логотип Седоны">
+        <img class="logo" src="#" width="#" height="#" alt="Логотип Седоны">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="visually-hidden main-nav__wrapper">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a><!--Закрывающая кнопка-->
+              <a class="site-list__link"  href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a>Форма отзыва</a>
+              <a class="site-list__link">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
+          <!--Закрывающая кнопка-->
         </div>
       </nav>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__header">Оставьте свой отзыв</h1>
-      <p class="page-main__text">Помогите нашим отелям стать лучше!<br>
-      Оставьте отзыв о них, а также о <br>
-      посещенных вами <br>
-      достопримечательностях</p>
+      <p class="page-main__text">Помогите нашим отелям стать лучше!<p>
+      <p class="page-main__text">Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-feedback__name">Представьтесь:<br>
-          Имя*: <input type="text" placeholder="Петр"> <br>
-          Фамилия*: <input type="text" placeholder="Иванов"> <br>
-          Отчество: <input type="text" placeholder="Александрович"><br>
+        <fieldset class="form-feedback__name name">
+          <h2 class="name__subtitle">Представьтесь:</h2>
+          <p class="name__text">Имя*:</p> <input type="text" placeholder="Петр">
+          <p class="name__text">Фамилия*:</p><input type="text" placeholder="Иванов">
+          <p class="name__text">Отчество:</p> <input type="text" placeholder="Александрович">
         </fieldset>
 
-        <fieldset class="form-feedback__contacts">Контактная информация: <br>
-          Контактный телефон*: <br>
-          <input type="tel" placeholder="Введите телефон"> <!--Иконка трубки--><br>
-          Электронная почта*: <br>
-          <input type="email" placeholder="Введите e-mail"> <!--Иконка конверта--><br>
+        <fieldset class="form-feedback__contacts contacts">
+          <h2 class="contacts__subtitle">Контактная информация:</h2>
+          <p class="contacts__text">Контактный телефон*:</p>
+          <input type="tel" placeholder="Введите телефон"> <!--Иконка трубки-->
+          <p class="contacts__text">Электронная почта*:</p>
+          <input type="email" placeholder="Введите e-mail"> <!--Иконка конверта-->
         </fieldset>
 
-        <fieldset class="form-feedback__impressions">Ваше общее впечатление: <br>
-        <input type="radio" name="impression" value="positive" checked> Скорее положительное<br>
-        <input type="radio" name="impression" value="negative"> Скорее отрицательное<br>
-        <input type="radio" name="impression" value="indefinite"> Затрудняюсь ответить
+        <fieldset class="form-feedback__impressions impressions">
+        <h2 class="impressions__subtitle">Ваше общее впечатление:</h2>
+        <input type="radio" name="impression" value="positive" checked> <span class="impressions__text">Скорее положительное</span><br>
+        <input type="radio" name="impression" value="negative"> <span class="impressions__text">Скорее отрицательное</span><br>
+        <input type="radio" name="impression" value="indefinite"> <span class="impressions__text">Затрудняюсь ответить</span>
         </fieldset>
 
-        <fieldset class="form-feedback__showplaces">Посещенные <br>
-          достопримечательности: <br>
-          <input type="checkbox" checked> Мост дьявола <br>
-          <input type="checkbox" checked> Гора-Колокол <br>
-          <input type="checkbox" checked> Слайд-парк<br>
-          <input type="checkbox"> Красные скалы<br>
+        <fieldset class="form-feedback__showplaces showplaces">
+          <h2 class="showplaces__subtitle">Посещенные достопримечательности:</h2>
+          <input type="checkbox" checked><span class="showplaces__text">Мост дьявола</span> <br>
+          <input type="checkbox" checked> <span class="showplaces__text">Гора-Колокол</span> <br>
+          <input type="checkbox" checked> <span class="showplaces__text">Слайд-парк</span><br>
+          <input type="checkbox"><span class="showplaces__text">Красные скалы</span>
         </fieldset>
 
-        <fieldset class="form-feedback__emotions">Опишите свои эмоции: <br>
+        <fieldset class="form-feedback__emotions">
+          <h2 class="form-feedback__subtitle">Опишите свои эмоции:</h2>
           <textarea rows="6">Опишите подробно все свои восторги</textarea>
-        </fieldset><br>
+        </fieldset>
 
         <input class="form-feedback__submit" type="submit" value="Отправить отзыв">
       </form>
@@ -78,16 +81,16 @@
 
 
     <footer class="page-footer">
+      <h2 class="social-media__hashtag">#visitsedona</h2>
       <ul class="social-media">
-        <span class="social-media__hashtag">#visitsedona</span>
         <li class="social-media__item">
-          <a href="blank.html"><!--Иконка твиттера--></a>
+          <a href="blank.html"><span class="visually-hidden">Twitter</span></a>
         </li>
         <li class="social-media__item">
-          <a href="blank.html"><!--Иконка фб--></a>
+          <a href="blank.html"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li class="social-media__item">
-          <a href="blank.html"><!--Иконка ютуба--></a>
+          <a href="blank.html"><span class="visually-hidden">YouTube</span></a>
         </li>
       </ul>
 

@@ -8,27 +8,28 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="#" width="#" height="#" alt="Логотип Седоны">
+        <img class="logo" src="#" width="#" height="#" alt="Логотип Седоны">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="visually-hidden main-nav__wrapper">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a><!--Закрывающая кнопка-->
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
+          <!--Закрывающая кнопка-->
         </div>
       </nav>
     </header>
@@ -38,47 +39,48 @@
       <svg></svg>
       <section class="advantages">
         <h1 class="advantages__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-
-        <uL class="advantages-list">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ul class="advantages-list">
           <li class="advantages-list__item">
-            <h2>Настоящий городок</h2>
-            №1<br>
-            Седона не аттракцион для туристов, там течет своя жизнь<br>
-            <img src="#" width="" height="" alt="Фото города">
-            <ul class="">
-              <li>
-                <h3>Жилье</h3>
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
+            <h2 class="advantages-list__header">Настоящий городок</h2>
+            <p class="advantages-list__text">№1</p>
+            <p class="advantages-list__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="advantages-list__photo" src="#" width="" height="" alt="Фото города">
+            <ul class="city-life">
+              <li class="city-life__item">
+                <h3 class="city-life__header">Жилье</h3>
+                <p class="city-life__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li>
-                <h3>Еда</h3>
-                Всегда заказывайте фирменный бургер, вы не разочаруеетсь!
+              <li class="city-life__item">
+                <h3 class="city-life__header">Еда</h3>
+                <p class="city-life__text">Всегда заказывайте фирменный бургер, вы не разочаруеетсь!</p>
               </li>
-              <li>
-                <h3>Сувениры</h3>
-                Не только китайского, но и местного производства!
+              <li class="city-life__item">
+                <h3 class="city-life__header">Сувениры</h3>
+                <p class="city-life__text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages-list__item">
-            <h2>Там есть мост дьявола</h2>
-            №2<br>
-            Да, по нему можно пройти! Если вы осмелитесь, конечно
+            <h2 class="advantages-list__header">Там есть мост дьявола</h2>
+            <p class="advantages-list__text">№2</p>
+            <p class="advantages-list__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="advantages-list__photo" src="#" width="" height="" alt="Фото Моста дьявола">
           </li>
           <li class="advantages-list__item">
-            <h2>Небольшая площадь</h2>
-            №3<br>
-            Все интересные места находятся очень близко
+            <h2 class="advantages-list__header">Небольшая площадь</h2>
+            <p class="advantages-list__text">№3</p>
+            <p class="advantages-list__text">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages-list__item">
-            <h2>Красивая дорога</h2>
-            №4<br>
-            Ехать в Седону из Лас-Вегаса совсем не скучно!
+            <h2 class="advantages-list__header">Красивая дорога</h2>
+            <p class="advantages-list__text">№4</p>
+            <p class="advantages-list__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-list__item">
-            <h2>Мало туристов</h2>
-            №5<br>
-            Большинство едет в Гранд Каньон и толпится там
+            <h2 class="advantages-list__header">Мало туристов</h2>
+            <p class="advantages-list__text">№5</p>
+            <p class="advantages-list__text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </uL>
       </section>
@@ -87,22 +89,23 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="tour__header">Заинтересовались?</p>
         <p class="tour__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <a class="tour__hotel-searh" href="blank.html">Найти гостинницу</a>
+        <a class="tour__hotel-searсh" href="blank.html">Найти гостинницу</a>
+        <div class="map"></div>
       </section>
 
     </main>
 
     <footer class="page-footer">
+      <h2 class="social-media__hashtag">#visitsedona</h2>
       <ul class="social-media">
-        <span class="social-media__hashtag">#visitsedona</span>
         <li class="social-media__item">
-          <a href="blank.html"><!--Иконка твиттера--></a>
+          <a href="blank.html"><span class="visually-hidden">Twitter</span></a>
         </li>
         <li class="social-media__item">
-          <a href="blank.html"><!--Иконка фб--></a>
+          <a href="blank.html"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li class="social-media__item">
-          <a href="blank.html"><!--Иконка ютуба--></a>
+          <a href="blank.html"><span class="visually-hidden">YouTube</span></a>
         </li>
       </ul>
 
