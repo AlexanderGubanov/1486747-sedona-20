@@ -29,7 +29,7 @@
               <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-          <button><span class="visually-hidden">Кнопка Закрыть</span></button>
+          <button><span class="visually-hidden">Закрыть</span></button>
         </div>
       </nav>
     </header>
@@ -60,24 +60,24 @@
 
         <fieldset class="form-feedback__fieldset">
           <h2 class="form-feedback__subtitle">Ваше общее впечатление:</h2>
-          <input class="form-feedback__radio" type="radio" name="impression" value="positive" checked>
-          <span class="form-feedback__answers">Скорее положительное</span>
-          <input class="form-feedback__radio" type="radio" name="impression" value="negative">
-          <span class="form-feedback__answers">Скорее отрицательное</span>
-          <input class="form-feedback__radio" type="radio" name="impression" value="indefinite">
-          <span class="form-feedback__answers">Затрудняюсь ответить</span>
+          <input class="form-feedback__radio" type="radio" name="impression" id="positive" value="positive" checked>
+          <label for="positive" class="form-feedback__answers">Скорее положительное</label>
+          <input class="form-feedback__radio" type="radio" name="impression" id="negative" value="negative">
+          <label for="negative" class="form-feedback__answers">Скорее отрицательное</label>
+          <input class="form-feedback__radio" type="radio" name="impression" id="indefinite" value="indefinite">
+          <label for="indefinite" class="form-feedback__answers">Затрудняюсь ответить</label>
         </fieldset>
 
         <fieldset class="form-feedback__fieldset">
           <h2 class="showplaces__subtitle">Посещенные достопримечательности:</h2>
-          <input type="checkbox" name="showplace" checked>
-          <span class="form-feedback__answers">Мост дьявола</span>
-          <input type="checkbox" name="showplace" checked>
-          <span class="form-feedback__answers">Гора-Колокол</span>
-          <input type="checkbox" name="showplace" checked>
-          <span class="form-feedback__answers">Слайд-парк</span>
-          <input type="checkbox" name="showplace">
-          <span class="form-feedback__answers">Красные скалы</span>
+          <input class="form-feedback__showplace" type="checkbox" name="showplace" id="bridge" checked>
+          <label for="bridge" class="form-feedback__answers">Мост дьявола</label>
+          <input class="form-feedback__showplace" type="checkbox" name="showplace" id="mountain" checked>
+          <label for="mountain" class="form-feedback__answers">Гора-Колокол</label>
+          <input class="form-feedback__showplace" type="checkbox" name="showplace" id="park" checked>
+          <label for="park" class="form-feedback__answers">Слайд-парк</label>
+          <input class="form-feedback__showplace" type="checkbox" id="rocks" name="showplace">
+          <label for="rocks" class="form-feedback__answers">Красные скалы</label>
         </fieldset>
 
         <fieldset class="form-feedback__fieldset">
